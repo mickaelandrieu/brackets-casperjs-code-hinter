@@ -1,4 +1,4 @@
-brackets-custom-code-hinter
+brackets-casperjs-code-hinter
 ===========================
 
-Bracktes extensions that allows developer add custom code hinters.
+Bracktes extensions.
