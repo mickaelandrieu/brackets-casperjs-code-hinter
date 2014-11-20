@@ -96,16 +96,19 @@ define(function (require, exports, module) {
 			line: cursor.line,
 			ch: 0
 		};
-        
+
 		var textBeforeCursor = editor.document.getRange(lineBeginning, cursor);
 
-//        if (implicitChar == '.'){
-//            return true;
-//        }        
-//        
-//        return false;
+        var match = textBeforeCursor.match(/casper[\.]*/i);
         
-		return textBeforeCursor.match(/casper[\.]*/i);
+        if (match[0] == 'casper.'){
+            return true;
+        }
+        
+        
+        return false;
+        
+//		return textBeforeCursor.match(/casper[\.]*/i);
 	}
 
 	CustonCodeHint.prototype.getHints = function (implicitChar) {
