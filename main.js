@@ -27,8 +27,8 @@ define(function (require, exports, module) {
 
 		FileUtils.readAsText(casperPath).done(function (rawText) {
 			_this.methods = _this.findAllFunctionsInText(rawText);
-			// _this._getHintsFunction();
-			// _this._getHintsMethods("create");
+            //_this._getHintsFunction();
+            //_this._getHintsMethods("create");
 		});
 	}
 
@@ -76,15 +76,18 @@ define(function (require, exports, module) {
 		if (this.methods.hasOwnProperty(hint)) {
 			return hint + this.methods[hint].params;
 		}
+        
+        console.log(hint);
+        
 		return hint;
 	}
 	
 	CustonCodeHint.prototype.hasHints = function (editor, implicitChar) {
-		
-		if (implicitChar !== '.') {
+        
+		if (implicitChar != '.') {
 			return false;
 		}
-		
+        
 		this.editor = editor;
 
 		var cursor = this.editor.getCursorPos();
@@ -93,9 +96,15 @@ define(function (require, exports, module) {
 			line: cursor.line,
 			ch: 0
 		};
-
+        
 		var textBeforeCursor = editor.document.getRange(lineBeginning, cursor);
 
+//        if (implicitChar == '.'){
+//            return true;
+//        }        
+//        
+//        return false;
+        
 		return textBeforeCursor.match(/casper[\.]*/i);
 	}
 
