@@ -1,4 +1,3 @@
-// https://github.com/fdecampredon/brackets-typescript/blob/master/src/main/codeHintProvider.ts
 define(function (require, exports, module) {
 	"use strict";
 
