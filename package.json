@@ -1,0 +1,23 @@
+{
+    "name": "casperjs-code-hinter",
+    "title": "Casperjs Code Hinter",
+    "description": "Code hinter for casperjs.",
+    "homepage": "https://github.com/thyagoluciano/brackets-casperjs-code-hinter",
+    "version": "0.0.01",
+    "author": "Thyago Luciano <thyagoluciano@gmail.com>",
+    "license": "MIT",
+    "engines": {
+        "brackets": ">=0.36.0"
+    },
+    "main": "main.js",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/tarcisiojr/brackets-casperjs-code-hinter.git"
+    },
+    "bugs": {
+        "url": "https://github.com/tarcisiojr/brackets-casper-code-hinter/issues"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    }
+}
