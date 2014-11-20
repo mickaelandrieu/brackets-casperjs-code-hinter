@@ -3,7 +3,7 @@
     "title": "Casperjs Code Hinter",
     "description": "Code hinter for casperjs.",
     "homepage": "https://github.com/thyagoluciano/brackets-casperjs-code-hinter",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "Thyago Luciano <thyagoluciano@gmail.com>",
     "license": "MIT",
     "engines": {
